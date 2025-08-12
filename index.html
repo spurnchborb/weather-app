@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>News</li>
+        <li>Weather</li>
+        <li style="float: right">About</li>
+      </ul>
+      <div class="flex-col">
+        <span id="dayTitle1" class="col-head"></span>
+        <img id="weatherIcon1" class="weatherIcon" />
+        <span class="temp-data">
+          <span id="data1"></span> <span>°F</span>
+        </span>
+      </div>
+    </nav>
+    <main><section class="weather-section">
+      <div class="page">
+        <h1>LATEST WEATHER</h1>
+        <div class="archive">
+          <class="article">
+             <article class="article">
+              <section id="stats">
+                <div class="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city">Tooele, UT</h3>
+                  <p>Currently: Sunny<span id="current-desc"></span></p>
+                  <p>
+                    Tempature: 
+                    <span id="current-temp"></span> 87°F
+                  </p>
+                  <p>Feels Like: <span id="current-windChill"></span> 89°F</p>
+                  <p>Humidity: <span id="current-humid"></span>17%</p>
+                  <p>Wind Speed: <span id="current-windSpeed"></span> 6 mph</p>
+                </div>
+              </section>
+              <div>
+                <img src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/Sunny.jpg?raw=true" alt="Sunny" />
+              </div>
+            </article>
+
+            <!-- 5 day forecast -->
+            <div class="article-five-day">
+              <article id="forecastContainer">
+                <h2 id="forecastTitle">5 Day Forecast</h2>
+                <h3 id="city">Tooele</h3>
+                <div class="flex">
+                  <div class="flex-col">
+                    <span id="dayTitle1" class="col-head"></span>
+                    <img id="weatherIcon1" class="weatherIcon" />
+                    <span class="temp-data">
+                      <span id="data1"></span>
+                      <span>97°F</span>
+                    </span>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle2" class="col-head"></span>
+                    <img id="weatherIcon2" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data2"></span>
+                      <span>92°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle3" class="col-head"></span>
+                    <img id="weatherIcon3" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data3"></span>
+                      <span>90°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle4" class="col-head"></span>
+                    <img id="weatherIcon4" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data4"></span>
+                      <span>87°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle5" class="col-head"></span>
+                    <img id="weatherIcon5" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data5"></span>
+                      <span>89°F</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      </div>
+    </section></main>
+    <footer></footer>
+  </body>
+</html>
