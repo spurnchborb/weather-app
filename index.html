@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>BiagaWeather</title>
+  </head>
+  <body>
+    <header><img class="nav-img" src="img/icon.png" alt="weather icon"/>
+      <nav class="topnav">
+        <ul class="nav-left">
+          <li><button type="button" class="nav-button">Home</button></li>
+          <li><button type="button" class="nav-button">Weather</button></li>
+          <li><button type="button" class="nav-button">News</button></li>
+        </ul>
+        <ul class="nav-right">
+          <li><button type="button" class="nav-button">About</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="weather-section">
+        <h1>Latest Weather</h1>
+        <section class="weather-summary">
+          <figure>
+          <img
+            src="img/weather.png"
+            alt="4 Weather Icons"
+          >
+          <figcaption><em>Stay warm!</em></figcaption>
+          </figure>
+          <div class="summary-text">
+            <h2>Weather summary</h2>
+            <h3 id="five-city">Tooele, UT</h3>
+            <p>Currently: <span id="current-desc">Sunny</span></p>
+            <p>Temperature: <span id="current-temp">87°F</span></p>
+            <p>Feels Like: <span id="current-windChill">89°F</span></p>
+            <p>Humidity: <span id="current-humid">17%</span></p>
+            <p>Wind Speed: <span id="current-windSpeed">6 mph</span></p>
+          </div>
+        </section>
+        <section class="five-day">
+          <h2>5 Day Forecast</h2>
+          <h3 id="city">Tooele</h3>
+          <div class="forecast-grid">
+            <div class="forecast-day">
+              <span id="dayTitle1" class="col-head">Mon</span>
+              <img
+                id="weatherIcon"
+                class="weatherIcon"
+                src="img/sun.png"
+                alt="Sunny"
+              />
+              <span class="temp-data"><span id="data1"></span>97°F</span>
+            </div>
+
+            <div class="forecast-day">
+              <span id="dayTitle2" class="col-head">Tue</span>
+              <img
+                id="weatherIcon2"
+                class="weatherIcon"
+                src="img/cloudy.png"
+                alt="cloudy"
+              />
+              <span class="temp-data"><span id="data2"></span>92°F</span>
+            </div>
+
+            <div class="forecast-day">
+              <span id="dayTitle3" class="col-head">Wed</span>
+              <img
+                id="weatherIcon3"
+                class="weatherIcon"
+                src="img/stormy.png"
+                alt="Stormy Weather"
+              />
+              <span class="temp-data"><span id="data3"></span>90°F</span>
+            </div>
+
+            <div class="forecast-day">
+              <span id="dayTitle4" class="col-head">Thu</span>
+              <img
+                id="weatherIcon4"
+                class="weatherIcon"
+                src="img/rainy.png"
+                alt="Raining"
+              />
+              <span class="temp-data"><span id="data4"></span>87°F</span>
+            </div>
+
+            <div class="forecast-day">
+              <span id="dayTitle5" class="col-head">Fri</span>
+              <img
+                id="weatherIcon5"
+                class="weatherIcon"
+                src="img/sun.png"
+                alt="Sunny"
+              />
+              <span class="temp-data"><span id="data5"></span>89°F</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <hr />
+
+      <section class="news-section">
+        <h1>Animal News</h1>
+        <div class="archive">
+          <article class="main-article">
+            <figure>
+            <img
+              src="img/chefkitty.jpg"
+              alt="cat frying rice"
+            />
+            <figcaption><em>Sugarloaf at work.</em></figcaption>
+            </figure>
+            <figure>
+            <h2>
+              <a id="header-article"><u><strong>Beloved local cat opens restaurant of the year.</strong></u></a>
+            </h2>
+            <fig-caption>
+            <p id="header-desc">
+              Famous Feline Chef, Sugarloaf, has opened a new restaruant in New Meow city. The restaurant, Claw & Order: Fine Dining Unit, has already earned it's michelin stars despite opening less than a week ago. 
+            </p></fig-caption></figure>
+            <figure>
+            <img src="img/chefcat.jpg" alt="chef cat in uniform">
+          <figcaption><em>Looking for a change in employment? Sugarloaf is looking for the top kittens in New Meow City to bring some spice to Claw & Order.</em><a href="https://cat-bounce.com/">Apply Here.</a></figcaption></figure>
+          </article>
+           <div class="small-articles">
+          <article class="article">
+            <h3><a id="article-link-1">POLL: Cutest Cartoon animal?</a></h3>
+            <img
+              id="article-img-1"
+              src="img/duckymomo.jpg"
+              alt="Ducky Momo Movie Poster"
+            />
+            <p id="article-desc-1">
+              <em>The results are in!</em> Let’s see which companion is crowned
+              the cutest of them all.
+            </p>
+          </article>
+
+          <article class="article">
+            <h3><a id="article-link-2">19 Pig Jokes that will make you Oink!</a></h3>
+            <img
+              id="article-img-2"
+              src="https://i.pinimg.com/236x/23/be/3e/23be3ec2364c44b01638595bde917274.jpg"
+              alt="group of pigs"
+            />
+            <p id="article-desc-2">
+              Want to submit your own joke?
+              <a href="https://funnyanimaljokes.com">Click here!</a>
+            </p>
+          </article>
+
+          <article class="article">
+            <h3>
+              <a id="article-link-3">Animals that look like Celebrities Vol.29</a>
+            </h3>
+            <img
+              id="article-img-3"
+              src="https://www.nme.com/wp-content/uploads/2017/08/Cher-and-a-dog.jpg"
+              alt="Cher and Afghan dog"
+            />
+            <p id="article-desc-3">
+              See what furry doppelgangers these celebs have!
+            </p>
+          </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <span id="year">2025</span> | Biaga Thomas |
+      <a
+        href="https://tooeletech.edu/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Tooele Technical College</a
+      >
+      <br />
+      Last updated: Thu Sep 4 2025 <span id="updated"></span>
+    </footer>
+  </body>
+</html>
