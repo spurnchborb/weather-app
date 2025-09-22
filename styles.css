@@ -111,15 +111,16 @@ border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
 }
-.nav-button{
+.nav-button {
   background-color: #E88D67;
   border: none;
-  text-color white;
+  color: white;   
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 10px;
 }
+
 .nav-button:hover{
   background-color: #CBD9AD;
 }

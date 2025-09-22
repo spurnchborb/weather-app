@@ -1,0 +1,1 @@
+## github repo: https://github.com/spurnchborb/weather-app.git and github pages url: https://spurnchborb.github.io/weather-app/
